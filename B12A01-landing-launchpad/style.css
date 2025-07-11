@@ -52,7 +52,7 @@ nav { /* This applies to all nav elements, but specifically the main nav is dire
 }
 
 .site-primary-button:hover {
-    background-color: #898720;
+    background-color: #907d1e;
 }
 
 .site-hero-content {
@@ -310,6 +310,8 @@ p {
 .site-contact-heading-area h1 {
     font-size: 45px;
     color: #222;
+    margin-top:70px;
+    margin-right:40px;
 }
 
 .site-contact-form {
@@ -359,12 +361,52 @@ p {
 }
 
 .site-contact-section button[type="submit"]:hover {
-    background-color: #17124e;
+    background-color: #907d1e;
 }
 
 .site-footer {
-    background-color: #222;
+    background-color: #f9f8f8;
     color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.site-footer-logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4f46e5;
+    margin-bottom: 20px;
+}
+
+.site-footer-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.site-footer-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.site-footer-nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.site-footer-nav a:hover {
+    color: #4f46e5;
+}
+
+/* Footer Section */
+.site-footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 60px 0;
 }
@@ -387,11 +429,12 @@ p {
 }
 
 .site-footer-nav a {
-    color: white;
+    color: rgb(2, 2, 2);
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
     transition: color 0.3s ease;
+    
 }
 
 .site-footer-nav a:hover {
