@@ -49,7 +49,7 @@ nav {
 }
 
 .site-primary-button:hover {
-    background-color: #17124e;
+    background-color: #17124e; /* Ensured consistent hover color */
 }
 
 .site-hero-content {
@@ -87,7 +87,7 @@ nav {
     margin-top: 116px;
     margin-left: 140px;
     margin-right: 140px;
-    padding: 20px 0;
+    padding: 20px 0; /* Added back padding for content sections */
 }
 
 h1, h2 {
@@ -109,13 +109,13 @@ p {
     margin-top: 50px;
     padding: 40px;
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 15px; /* Added back border-radius */
+    /* Removed box-shadow here as per earlier request for THIS specific card */
 }
 
 .site-action-text-area {
     flex: 1;
     padding-right: 50px;
-    padding-left: 0px;
     text-align: left;
 }
 
@@ -193,7 +193,7 @@ p {
     background-color: #f8f8f8;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Re-added box-shadow for testimonial cards */
     text-align: center;
     max-width: 300px;
     flex: 1 1 calc(33.333% - 60px);
@@ -349,12 +349,13 @@ p {
 }
 
 .site-contact-section button[type="submit"]:hover {
-    background-color: #17124e;
+    background-color: #17124e; 
 }
 
+
 .site-footer {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #222; 
+    color: white; 
     text-align: center;
     padding: 60px 0;
 }
@@ -376,11 +377,11 @@ p {
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 30px; 
 }
 
 .site-footer-nav a {
-    color: rgb(0, 0, 0);
+    color: white; 
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
