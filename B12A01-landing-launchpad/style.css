@@ -1,4 +1,3 @@
-/* General Body Styles */
 body {
     font-family: 'Raleway', sans-serif;
     color: #333;
@@ -7,7 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header Section */
 .site-hero-background {
     background-image: url(./Assets/Hero-bg.png);
     background-size: cover;
@@ -17,7 +15,7 @@ body {
     padding-top: 50px;
 }
 
-nav { /* This applies to all nav elements, but specifically the main nav is direct child of header */
+nav {
     display: flex;
     justify-content: space-between;
     margin-left: 150px;
@@ -37,7 +35,6 @@ nav { /* This applies to all nav elements, but specifically the main nav is dire
     letter-spacing: 0%;
 }
 
-/* Primary Button Styling (reused across multiple buttons) */
 .site-primary-button {
     border-radius: 10px;
     color: rgb(255, 255, 255);
@@ -52,7 +49,7 @@ nav { /* This applies to all nav elements, but specifically the main nav is dire
 }
 
 .site-primary-button:hover {
-    background-color: #907d1e;
+    background-color: #17124e;
 }
 
 .site-hero-content {
@@ -90,7 +87,7 @@ nav { /* This applies to all nav elements, but specifically the main nav is dire
     margin-top: 116px;
     margin-left: 140px;
     margin-right: 140px;
-    
+    padding: 20px 0;
 }
 
 h1, h2 {
@@ -112,14 +109,13 @@ p {
     margin-top: 50px;
     padding: 40px;
     background-color: #ffffff;
-    
-    
+    border-radius: 15px;
 }
 
 .site-action-text-area {
     flex: 1;
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 0px;
     text-align: left;
 }
 
@@ -200,15 +196,15 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 300px;
-    flex: 1 1 calc(33.333% - 60px); 
-    min-width: 280px; 
+    flex: 1 1 calc(33.333% - 60px);
+    min-width: 280px;
 }
 
 .site-secondary-background {
     background-color: #f0f0f0;
 }
 
-.site-testimonial-card img { 
+.site-testimonial-card img {
     width: 20px;
     height: 20px;
     margin: 0 2px;
@@ -234,7 +230,7 @@ p {
     margin-top: 20px;
 }
 
-.site-reviewer-info img { 
+.site-reviewer-info img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -256,7 +252,7 @@ p {
     padding: 100px 140px;
     background-color: #e6e6e6;
     margin-top: 100px;
-    gap: 50px; 
+    gap: 50px;
 }
 
 .site-cta-content {
@@ -303,19 +299,11 @@ p {
     margin-top: 100px;
 }
 
-.site-contact-heading-area { 
-
-}
-
 .site-contact-heading-area h1 {
     font-size: 45px;
     color: #222;
-    margin-top:70px;
-    margin-right:40px;
-}
-
-.site-contact-form {
-    
+    margin-top: 70px;
+    margin-right: 40px;
 }
 
 .site-form-group {
@@ -345,7 +333,7 @@ p {
 }
 
 .site-form-button-wrapper {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .site-contact-section button[type="submit"] {
@@ -357,53 +345,13 @@ p {
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s ease;
-    width: auto; 
+    width: auto;
 }
 
 .site-contact-section button[type="submit"]:hover {
-    background-color: #907d1e;
+    background-color: #17124e;
 }
 
-.site-footer {
-    background-color: #f9f8f8;
-    color: white;
-    text-align: center;
-    padding: 60px 0;
-}
-
-.site-footer-logo {
-    font-size: 40px;
-    font-weight: bold;
-    color: #4f46e5;
-    margin-bottom: 20px;
-}
-
-.site-footer-description {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.site-footer-nav {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.site-footer-nav a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.site-footer-nav a:hover {
-    color: #4f46e5;
-}
-
-/* Footer Section */
 .site-footer {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
@@ -426,15 +374,16 @@ p {
 
 .site-footer-nav {
     margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .site-footer-nav a {
-    color: rgb(2, 2, 2);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    margin: 0 15px;
     font-size: 18px;
     transition: color 0.3s ease;
-    
 }
 
 .site-footer-nav a:hover {
