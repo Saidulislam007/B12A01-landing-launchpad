@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
     font-family: 'Raleway', sans-serif;
     color: #333;
@@ -6,25 +7,26 @@ body {
     background-color: #f4f4f4;
 }
 
-header {
+/* Header Section */
+.site-hero-background {
     background-image: url(./Assets/Hero-bg.png);
     background-size: cover;
-    text-align: center;
     background-position: center;
-    height: 690px; 
+    height: 690px;
+    text-align: center;
     padding-top: 50px;
 }
 
-nav {
+nav { /* This applies to all nav elements, but specifically the main nav is direct child of header */
     display: flex;
     justify-content: space-between;
     margin-left: 150px;
     margin-right: 150px;
-    padding: 0px; 
+    padding: 0px;
     align-items: center;
 }
 
-nav p { 
+.site-logo-text {
     height: 51px;
     width: 99px;
     color: rgb(78, 71, 255);
@@ -35,8 +37,8 @@ nav p {
     letter-spacing: 0%;
 }
 
-
-button {
+/* Primary Button Styling (reused across multiple buttons) */
+.site-primary-button {
     border-radius: 10px;
     color: rgb(255, 255, 255);
     width: 132px;
@@ -46,71 +48,352 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border: 0px;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
-button:hover {
-    background-color: #7b8b1d;
+.site-primary-button:hover {
+    background-color: #898720;
 }
 
-header > div:nth-of-type(1) { 
+.site-hero-content {
     margin: 0 auto;
     height: 237px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px; 
+    padding-top: 50px;
 }
 
-header h1 { 
+.site-hero-heading {
     width: 905px;
-    height: auto; 
+    height: auto;
     color: rgb(37, 36, 50);
     font-family: 'Raleway';
-
-    font-weight: 700; 
-
     font-size: 65px;
+    font-weight: 700;
     line-height: 76px;
-
     text-align: center;
     margin: 0 auto;
 }
 
-header > div:nth-of-type(1) > div:nth-of-type(1) { 
+.site-focus-button-wrapper {
     display: flex;
     align-items: center;
-
     margin-top: 37px;
-    width: 170px; 
+    width: 170px;
     height: 48px;
     border: 0px;
 }
 
-body > div:nth-of-type(1) {
+.site-main-section-margin {
     margin-top: 116px;
-
     margin-left: 140px;
     margin-right: 140px;
-    padding: 20px 0; 
+    
 }
 
-h1 {
+h1, h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #222;
 }
 
-h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    color: #333;
-}
-
 p {
     font-family: 'Open Sans', sans-serif;
     color: #555;
+    line-height: 1.8;
 }
 
+.site-action-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #ffffff;
+    
+    
+}
 
+.site-action-text-area {
+    flex: 1;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.site-action-image-area {
+    flex: 1;
+    text-align: center;
+}
+
+.site-action-image-area img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.site-user-stats-padding {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #e6e6e6;
+    margin-top: 80px;
+    border-radius: 15px;
+}
+
+.site-user-stats-heading {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.site-user-stats-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.site-stat-item {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+}
+
+.site-stat-item h1 {
+    font-size: 50px;
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.site-stat-item div {
+    font-size: 20px;
+    color: #666;
+}
+
+.site-testimonials-section-wrapper {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.site-testimonials-title {
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.site-testimonial-cards-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-left: 140px;
+    margin-right: 140px;
+    flex-wrap: wrap;
+}
+
+.site-testimonial-card {
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    flex: 1 1 calc(33.333% - 60px); 
+    min-width: 280px; 
+}
+
+.site-secondary-background {
+    background-color: #f0f0f0;
+}
+
+.site-testimonial-card img { 
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+}
+
+.site-testimonial-card h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4f46e5;
+}
+
+.site-testimonial-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.site-reviewer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.site-reviewer-info img { 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.site-reviewer-details {
+    line-height: 1.2;
+}
+
+.site-reviewer-details p:first-child {
+    font-weight: bold;
+}
+
+.site-call-to-action-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 140px;
+    background-color: #e6e6e6;
+    margin-top: 100px;
+    gap: 50px; 
+}
+
+.site-cta-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 50px;
+}
+
+.site-cta-image {
+    flex: 1;
+    text-align: center;
+}
+
+.site-cta-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.site-cta-heading {
+    font-size: 50px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.site-cta-paragraph {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.site-get-started-button {
+    width: 200px;
+    height: 55px;
+    font-size: 18px;
+}
+
+.site-contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 100px 140px;
+    background-color: #f2f2f2;
+    margin-top: 100px;
+}
+
+.site-contact-heading-area { 
+
+}
+
+.site-contact-heading-area h1 {
+    font-size: 45px;
+    color: #222;
+}
+
+.site-contact-form {
+    
+}
+
+.site-form-group {
+    margin-bottom: 20px;
+}
+
+.site-contact-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.site-contact-section input[type="email"],
+.site-contact-section input[type="text"],
+.site-contact-section textarea {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.site-contact-section textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.site-form-button-wrapper {
+    margin-top: 20px; 
+}
+
+.site-contact-section button[type="submit"] {
+    background-color: #4f46e5;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: auto; 
+}
+
+.site-contact-section button[type="submit"]:hover {
+    background-color: #17124e;
+}
+
+.site-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.site-footer-logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4f46e5;
+    margin-bottom: 20px;
+}
+
+.site-footer-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.site-footer-nav {
+    margin-top: 30px;
+}
+
+.site-footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.site-footer-nav a:hover {
+    color: #4f46e5;
+}
