@@ -1,8 +1,116 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: url(./Assets/Hero-bg.png);
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    height: 690px; 
+    padding-top: 50px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     margin-left: 150px;
     margin-right: 150px;
-    padding: 50px;
+    padding: 0px; 
+    align-items: center;
 }
+
+nav p { 
+    height: 51px;
+    width: 99px;
+    color: rgb(78, 71, 255);
+    font-family: 'Inter';
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+
+button {
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    width: 132px;
+    height: 48px;
+    font-family: 'Raleway';
+    background-color: #4f46e5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 0px;
+    font-size: 16px; 
+}
+
+button:hover {
+    background-color: #7b8b1d;
+}
+
+header > div:nth-of-type(1) { 
+    margin: 0 auto;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px; 
+}
+
+header h1 { 
+    width: 905px;
+    height: auto; 
+    color: rgb(37, 36, 50);
+    font-family: 'Raleway';
+
+    font-weight: 700; 
+
+    font-size: 65px;
+    line-height: 76px;
+
+    text-align: center;
+    margin: 0 auto;
+}
+
+header > div:nth-of-type(1) > div:nth-of-type(1) { 
+    display: flex;
+    align-items: center;
+
+    margin-top: 37px;
+    width: 170px; 
+    height: 48px;
+    border: 0px;
+}
+
+body > div:nth-of-type(1) {
+    margin-top: 116px;
+
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 20px 0; 
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #222;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+}
+
 
